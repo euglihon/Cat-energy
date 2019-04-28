@@ -1,0 +1,121 @@
+.pages-header__logo-block {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.pages-header__logo-link {
+  display: block;
+  cursor: pointer;
+}
+
+.pages-header__logo {
+  display: block;
+  padding-top: 11px;
+  width: 33px;
+  height: 38px;
+}
+
+.pages-header__logo-plus {
+  display: block;
+  margin-left: 12px;
+  margin-top: 24px;
+  width: 101px;
+  height: 18px;
+}
+
+.pages-header__togle {
+  position: relative;
+  padding: 32px;
+  margin: 0;
+  margin-right: -20px;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+
+}
+
+.pages-header__togle::after,
+.pages-header__togle::before  {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #111;
+  box-shadow: 0 -8px #111, 0 8px #111;
+  transform: translate(-50%,-50%);
+  transition: all .2s ease-out;
+}
+
+.pages-header__togle--opened {                          //Js-open main menu list
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pages-header__logo-block {
+    height: auto;
+  }
+
+  .pages-header__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pages-header__logo-link {
+    margin-top: 24px;
+  }
+
+
+  .pages-header__logo {
+    padding: 0;
+    width: 173px;
+    height: 58px;
+  }
+
+  .pages-header__logo-plus {
+    display: none;
+  }
+
+  .pages-header__togle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pages-header {
+    background-color: $main-color;
+    background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("/img/raster/index-background-desktop@1x.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    max-height: 696px;
+  }
+
+  @media(min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        .pages-header {
+          background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("/img/raster/index-background-desktop@2x.jpg");
+        }
+  }
+
+  .pages-header__logo-link {
+    margin-top: 55px;
+  }
+
+  .pages-header__logo {
+    width: 202px;
+    height: 59px;
+  }
+}

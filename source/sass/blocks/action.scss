@@ -1,0 +1,121 @@
+.action {
+  position: relative;
+  background-color: $main-color;
+  background-image: linear-gradient(to top,#fff 175px,transparent 175px), url("/img/raster/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media(min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+  .action {
+    background-image: linear-gradient(to top,#fff 175px,transparent 175px), url("/img/raster/index-background-mobile@2x.jpg");
+  }
+}
+
+.action__block {
+  text-align: center;
+}
+
+.action__title {
+  margin: 0;
+  padding: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  max-width: 260px;
+  font-family: $headline-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.action__text {
+  margin: 0;
+  padding: 0;
+
+  padding-bottom: 28px;
+  font-family: $headline-font;
+  line-height: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.action__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.action__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .action {
+    background: none;
+    padding-bottom: 540px;
+  }
+
+  .action__block {
+    margin: 0;
+    padding: 0;
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  .action__title {
+    margin: 0;
+    padding-top: 56px;
+    padding-bottom: 36px;
+    max-width: 450px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111;
+  }
+
+  .action__text {
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111;
+  }
+
+  .action__img {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    left: 30px;
+    top: 260px;
+  }
+
+  .action__link {
+    width: fit-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 27px;
+    padding-left: 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .action__title {
+    padding-top: 110px;
+  }
+
+  .action__img {
+    width: 552px;
+    height: 499px;
+    left: 490px;
+    top: 30px;
+  }
+}

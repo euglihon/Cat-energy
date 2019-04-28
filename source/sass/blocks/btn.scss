@@ -1,0 +1,20 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $main-color;
+  font-family: $headline-font;
+  color: #fff;
+  border: 0;
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    background-color: #5eaa2f;
+    color: #99c684;
+  }
+}
