@@ -1,7 +1,7 @@
 .action {
   position: relative;
   background-color: $main-color;
-  background-image: linear-gradient(to top,#fff 175px,transparent 175px), url("/img/raster/index-background-mobile@1x.jpg");
+  background-image: linear-gradient(to top,#fff 175px,transparent 175px), url("../img/raster/index-background-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -10,7 +10,7 @@
 @media(min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
   .action {
-    background-image: linear-gradient(to top,#fff 175px,transparent 175px), url("/img/raster/index-background-mobile@2x.jpg");
+    background-image: linear-gradient(to top,#fff 175px,transparent 175px), url("../img/raster/index-background-mobile@2x.jpg");
   }
 }
 

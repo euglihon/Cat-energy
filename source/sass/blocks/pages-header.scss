@@ -97,7 +97,7 @@
 @media (min-width: $desktop-width) {
   .pages-header {
     background-color: $main-color;
-    background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("/img/raster/index-background-desktop@1x.jpg");
+    background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("../img/raster/index-background-desktop@1x.jpg");
     background-position: right center;
     background-repeat: no-repeat;
     max-height: 696px;
@@ -106,7 +106,7 @@
   @media(min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
         .pages-header {
-          background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("/img/raster/index-background-desktop@2x.jpg");
+          background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("../img/raster/index-background-desktop@2x.jpg");
         }
   }
 
