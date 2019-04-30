@@ -5,12 +5,10 @@
 
 @media (min-width: $tablet-width) {
   .container {
+    margin: 0 auto;
     width: 708px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 30px;
     padding-right: 30px;
-
     border-right: 1px solid blueviolet;
     border-left: 1px solid blueviolet;
   }
@@ -19,11 +17,8 @@
 @media (min-width: $desktop-width) {
   .container {
     width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 40px;
     padding-right: 40px;
-
     border-right: 1px solid red;
     border-left: 1px solid red;
   }

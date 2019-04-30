@@ -21,7 +21,6 @@
 .action__title {
   margin: 0;
   padding: 0;
-
   margin-left: auto;
   margin-right: auto;
   padding-top: 28px;
@@ -37,7 +36,6 @@
 .action__text {
   margin: 0;
   padding: 0;
-
   padding-bottom: 28px;
   font-family: $headline-font;
   line-height: 14px;
@@ -61,19 +59,18 @@
 @media (min-width: $tablet-width) {
   .action {
     background: none;
-    padding-bottom: 540px;
   }
 
   .action__block {
     margin: 0;
     padding: 0;
-    margin-left: 80px;
+    margin-left: 85px;
     text-align: left;
   }
 
   .action__title {
     margin: 0;
-    padding-top: 56px;
+    padding-top: 58px;
     padding-bottom: 36px;
     max-width: 450px;
     font-size: 60px;
@@ -108,6 +105,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .action__block {
+    margin-left: 80px;
+  }
+
   .action__title {
     padding-top: 110px;
   }
@@ -117,5 +118,9 @@
     height: 499px;
     left: 490px;
     top: 30px;
+  }
+
+  .action__text {
+    padding-bottom: 45px;
   }
 }
