@@ -10,7 +10,7 @@
   </head>
 
   <body>
-
+<!--------------------------------------------------->
     <header class="pages-header">
       <div class="pages-header__block container">
         <div class="pages-header__logo-block">
@@ -58,7 +58,7 @@
         </div>
       <section>
     </header>
-
+<!--------------------------------------------------->
     <main class="page-main">
 
     <section class="programs container">
@@ -158,58 +158,55 @@
         </div>
     </section>
 
+    </main>
+<!--------------------------------------------------->
+    <footer class="page-footer">
 
+      <section class="contacts">
+        <div class="contacts__block container">
+            <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text--city">Санкт-Петербург</span></p>
+        </div>
 
+        <div class="contacts__map" id="map">
+          <picture> <!--NO .JS-->
+            <source media="(min-width: 1300px)" srcset="img/raster/bg-map-desktop@1x.png, img/raster/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/raster/bg-map-tablet@1x.png, img/raster/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-img" src="img/raster/bg-map-mobile@1x.png" srcset="img/raster/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+        </div>
+
+        <div class="contacts__footer-block">
+
+          <p class="contacts__icon">
+            <img class="contacts__svg" src="img/vector/sprite/logo-footer.svg" alt="Cat Energy контант">
+          </p>
+
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__social" target="_blank"><span class="visually-hidden">vk.com</span></a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__social" target="_blank"><span class="visually-hidden">instagram.com</span></a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__social"  target="_blank"><span class="visually-hidden">facebook.com</span></a>
+            </li>
+          </ul>
+
+          <a class="contacts__link" href="#">
+            <span class="contacts__dev-title">HTML Academy</span>
+            <span class="contacts__dev-svg"></span>
+          </a>
+
+        </div>
+      </section>
+    </footer>
 
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCubo6pvzkH1-z6BaeX_Dwz8SFaJXid5uM&callback=initialize" async defer></script>
 
-
-
-
-<!--
-
-
-      <section class="contacts">
-        <div class="contacts__block">
-          <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-
-        <div class="contacts__map">
-          <iframe class="contacts__map-link"></iframe>
-          <img class="contacts__map" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербур">
-        </div>
-      </section>
-    </main>
-
-    <footer class="main-footer">
-      <div class="main-footer__info">
-        <a class="main-footer__link">
-          <svg class="main-footer__svg"></svg>
-        </a>
-      </div>
-
-      <div class="main-footer__social">
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#" target="_blank"><span>vk.com</span></a>
-          </li>
-          <li class="main-footer__list">
-            <a class="main-footer__link" href="#" target="_blank"><span>instagram.com</span></a>
-          </li>
-          <li class="main-footer__list">
-            <a class="main-footer__link" href="#" target="_blank"><span>facebook.com</span></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="main-footer__developer">
-        <a class="main-footer__link" href="#">
-          <span class="main-footer__dev-title">HTML Academy</span>
-          <svg class="main-footer__dev-svg"></svg>
-        </a>
-      </div>
-    </footer>
   </body>
 </html>
