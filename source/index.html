@@ -10,7 +10,7 @@
   </head>
 
   <body>
-<!--------------------------------------------------->
+<!--------HEADER--------->
     <header class="pages-header">
       <div class="pages-header__block container">
         <div class="pages-header__logo-block">
@@ -22,7 +22,7 @@
             </picture>
           </a>
           <a class="pages-header__title-link" href="index.html">
-            <img class="pages-header__logo-plus" src="img/vector/sprite/logo-mobile-header.svg" alt="Cat Energy">
+            <img class="pages-header__logo-plus" src="img/vector/logo-mobile-header.svg" alt="Cat Energy">
           </a>
           <button class="pages-header__togle" type="button"></button>
         </div>
@@ -58,7 +58,7 @@
         </div>
       <section>
     </header>
-<!--------------------------------------------------->
+<!--------MAIN--------->
     <main class="page-main">
 
     <section class="programs container">
@@ -159,13 +159,15 @@
     </section>
 
     </main>
-<!--------------------------------------------------->
+<!--------FOOTER--------->
     <footer class="page-footer">
 
       <section class="contacts">
-        <div class="contacts__block container">
-            <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+        <div class="container">
+          <div class="contacts__block">
+            <b class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text--city">Санкт-Петербург</span></p>
+          </div>
         </div>
 
         <div class="contacts__map" id="map">
@@ -178,31 +180,53 @@
 
         <div class="contacts__footer-block">
 
-          <p class="contacts__icon">
-            <img class="contacts__svg" src="img/vector/sprite/logo-footer.svg" alt="Cat Energy контант">
-          </p>
-
-          <ul class="contacts__list">
+          <div class="container contacts__footer-wrapper">
+<!--1-->
+            <a class="contacts__icon">
+            <svg class="contacts__svg--icon" width="128px" height="24px">
+              <use xlink:href="img/vector/sprite/logo-footer.svg#logo-footer"></use>
+            </svg>
+            </a>
+<!--2-->
+            <ul class="contacts__list">
             <li class="contacts__item">
-              <a class="contacts__social" target="_blank"><span class="visually-hidden">vk.com</span></a>
+              <a class="contacts__social" href="https://vk.com" target="_blank"><span class="visually-hidden">vk.com</span>
+                <svg class="contacts__social--vk" width="22px" height="12px">
+                  <use xlink:href="img/vector/sprite/icon-vk.svg#icon-vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__social" target="_blank"><span class="visually-hidden">instagram.com</span></a>
+              <a class="contacts__social" href="https://instagram.com" target="_blank"><span class="visually-hidden">instagram.com</span>
+                <svg class="contacts__social--insta" width="16px" height="16px">
+                  <use xlink:href="img/vector/sprite/icon-insta.svg#icon-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__social"  target="_blank"><span class="visually-hidden">facebook.com</span></a>
+              <a class="contacts__social" href="https://facebook.com" target="_blank"><span class="visually-hidden">facebook.com</span>
+                <svg class="contacts__social--fb" width="10px" height="19px">
+                  <use xlink:href="img/vector/sprite/icon-fb.svg#icon-fb"></use>
+                </svg>
+              </a>
             </li>
-          </ul>
-
-          <a class="contacts__link" href="#">
+            </ul>
+<!--3-->
+            <a class="contacts__link" href="https://github.com/euglihon">
             <span class="contacts__dev-title">HTML Academy</span>
-            <span class="contacts__dev-svg"></span>
-          </a>
+            <svg class="contacts__svg-dev" width="26.94px" height="34.09px" height="19px">
+              <use xlink:href="img/vector/sprite/logo-htmlacademy.svg#logo-htmlacademy"></use>
+            </svg>
+            </a>
+
+          </div>
 
         </div>
+
+
       </section>
     </footer>
-
+<!--------SCRIPTS--------->
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/map.js"></script>

@@ -1,36 +1,16 @@
 .page-footer {
   position: relative;
+  background-color: #fff;
 }
-
-
-
-
-.contacts {
-  display: block;
-  background-color: red;
-
-  position: relative;
-}
-
-
-
 
 .contacts__block {
   padding-top: 30px;
   padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
-
-
 }
 
-
-
 .contacts__title {
-
-
-
-
   margin: 0;
   padding: 0;
   display: block;
@@ -44,10 +24,6 @@
 }
 
 .contacts__text {
-
-
-
-
   display: block;
   width: 50%;
   margin: 0;
@@ -60,105 +36,184 @@
   height: 365px;
 }
 
-
-
-
-
-
-
-
-
-
 .contacts__footer-block {
-
-
-
-
   background-color: #f2f2f2;
 }
 
 .contacts__icon {
+  display: block;
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 38px;
-  padding-bottom: 30px;
-
-  display: block;
-
+  padding-bottom: 27px;
   border-bottom: 2px solid #eaeaea;
+  text-align: center;
 }
-
-.contacts__svg {
-
-
-
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 128px;
-  height: 24px;
-}
-
-
-
-
 
 .contacts__list {
-
-
-
-
-
   @include reset-list;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-
+  padding-top: 23px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
-
-
   border-bottom: 2px solid  #eaeaea;
+}
 
+.contacts__item {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .contacts__social {
+  margin-right: 10px;
   display: block;
-  width: 22px;
-  height: 22px;
+  text-align: center;
 
-  border: 1px solid red;
+  &--vk,
+  &--insta,
+  &--fb {
+    fill: #444;
 }
 
+  &--vk:hover,
+  &--vk:focus,
+  &--insta:hover,
+  &--insta:focus,
+  &--fb:hover,
+  &--fb:focus {
+    fill: $main-color;
+}
 
-
-
-
-
-
+  &--vk:active,
+  &--insta:active,
+  &--fb:active {
+    opacity: 0.3;
+  }
+}
 
 .contacts__link {
-  margin-left: 20px;
-  margin-right: 20px;
   padding-bottom: 15px;
-  padding-top: 15px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+.contacts__svg-dev {
+  fill: #666;
 
-.contacts__dev-svg {
-  width: 40px;
-  height: 20px;
-  border: 1px solid red;
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__dev-title {
   font-size: 16px;
   line-height: 16px;
-  color: #111;
+  color: #666;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__block {
+    padding-top: 63px;
+    padding-bottom:  55px;
+  }
+
+  .contacts__title {
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 170px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    margin-right: 40px;
+    width: 160px;
+    text-align: right;
+
+    &--city {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  .contacts__map {
+    height: 400px;
+  }
+
+  .contacts__footer-wrapper {
+    padding-top: 58px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts__icon {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .contacts__list {
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    border: none;
+    align-items: center;
+  }
+
+  .contacts__item  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contacts__social--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .contacts__social--insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .contacts__social--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .contacts__link {
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+  }
+
+  .contacts__dev-title {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__block {
+    position: absolute;
+    z-index: 1;
+    top: 83px;
+    width: 570px;
+    background-color: #fff;
+  }
+
+  .contacts__title {
+    margin-left: 75px;
+  }
+
+  .contacts__text {
+    margin-right: 83px;
+    text-align: left;
+  }
 }
