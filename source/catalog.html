@@ -3,33 +3,78 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy Cat-Energy</title>
+    <meta name="viewport" content="width=devise-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
+<!--------HEADER--------->
     <header class="pages-header">
-      <a class="pages-header__logo-link">
-        <img class="pages-header__logo-image" src="img/logo-mobile.svg" height="38px" width="33px" alt="Cat Energy">
-        <svg class="pages-header__main-svg"></svg>
-      </a>
+      <div class="pages-header__block container">
+        <div class="pages-header__logo-block">
+          <a class="pages-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/vector/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg">
+              <img class="pages-header__logo" src="img/vector/logo-mobile.svg" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <a class="pages-header__title-link" href="index.html">
+           <img class="pages-header__logo-plus" src="img/vector/logo-mobile-header.svg" alt="Cat Energy">
+          </a>
+          <button class="pages-header__togle" type="button"></button>
+        </div>
 
-      <nav class="main-nav">
-          <button class="main-nav__togle" type="button"><span>Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item--active">
-                <a class="site-list__link">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
+<!--------MAIN--------->
+    <main class="page-main">
 
+      <section class="title-block container">
+        <h1 class="title-block__title">Каталог продукции</h1>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <!--
     <main class="page-main">
       <section class="main-block">
         <h1 class="main-block__title">Каталог продукции</h1>
@@ -301,4 +346,5 @@
       </div>
     </footer>
   </body>
-</html>
+</html> -->
+<script src="js/menu.js"></script>

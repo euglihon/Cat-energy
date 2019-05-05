@@ -19,7 +19,7 @@
   line-height: 25px;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
 }
 
 .main-nav__link {
@@ -34,9 +34,6 @@
   }
   &:active {
     opacity: 0.3;
-  }
-  &--one {
-    border-top: 1px solid  #e6e6e6;
   }
 }
 
@@ -79,8 +76,13 @@
 
   .main-nav__link {
     margin-top: 53px;
-    color: #fff;
-    &--active {
+
+
+    &--index {
+      color: #fff;
+    }
+
+    &--active-index {
       border-bottom: 2px solid #fff;
     }
   }

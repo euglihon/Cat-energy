@@ -1,5 +1,6 @@
 .pages-header {
   margin-bottom: 25px;
+  border-bottom: 1px solid  #e6e6e6;
 }
 
 .pages-header__logo-block {
@@ -70,7 +71,10 @@
 
 @media (min-width: $tablet-width) {
   .pages-header {
-    margin-bottom: 535px;
+    border: none;
+    &--index {
+      margin-bottom: 535px;
+    }
   }
 
   .pages-header__logo-block {
@@ -104,17 +108,21 @@
 
 @media (min-width: $desktop-width) {
   .pages-header {
-    min-height: 696px;
-    margin-bottom: 80px;
-    background-color: $main-color;
-    background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("../img/raster/index-background-desktop@1x.jpg");
-    background-position: right center;
-    background-repeat: no-repeat;
+    margin-bottom: 75px;
+
+    &--index {
+      margin-bottom: 80px;
+      min-height: 696px;
+      background-color: $main-color;
+      background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("../img/raster/index-background-desktop@1x.jpg");
+      background-position: right center;
+      background-repeat: no-repeat;
+    }
   }
 
   @media(min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-        .pages-header {
+        .pages-header--index {
           background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("../img/raster/index-background-desktop@2x.jpg");
         }
   }
