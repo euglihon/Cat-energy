@@ -3,38 +3,104 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy Cat-Energy</title>
+    <meta name="viewport" content="width=devise-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="pages-header">
-      <a class="pages-header__logo-link">
-        <img class="pages-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy">
-        <svg class="pages-header__main-svg"></svg>
-      </a>
 
-      <nav class="main-nav">
-          <button class="main-nav__togle" type="button"><span>Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item--active">
-                <a class="site-list__link--active" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
+  <body>
+<!--------HEADER--------->
+    <header class="pages-header">
+      <div class="pages-header__block container">
+        <div class="pages-header__logo-block">
+          <a class="pages-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/vector/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg">
+              <img class="pages-header__logo" width="33px" height="38px" src="img/vector/logo-mobile.svg" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <a class="pages-header__title-link" href="index.html">
+           <img class="pages-header__logo-plus" width="101px" height="18px" src="img/vector/logo-mobile-header.svg" alt="Cat Energy">
+          </a>
+          <button class="pages-header__togle" type="button"></button>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main class="page-main">
-      <section class="title-block">
-        <h1 class="title-block__title">Подбор программы</h1>
-        <p class="title-block__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+      <section class="form-main-block container">
+        <h1 class="form-main-block__title">Подбор программы</h1>
+        <p class="form-main-block__text">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/menu.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="page-main">
+
 
       <section class="form">
         <form class="form__" action="https://echo.htmlacademy.ru" method="GET">
@@ -132,33 +198,20 @@
         </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__info">
-        <a class="main-footer__link">
-          <svg class="main-footer__svg"></svg>
-        </a>
-      </div>
 
-      <div class="main-footer__social">
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#" target="_blank"><span>vk.com</span></a>
-          </li>
-          <li class="main-footer__list">
-            <a class="main-footer__link" href="#" target="_blank"><span>instagram.com</span></a>
-          </li>
-          <li class="main-footer__list">
-            <a class="main-footer__link" href="#" target="_blank"><span>facebook.com</span></a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="main-footer__developer">
-        <a class="main-footer__link" href="#">
-          <span class="main-footer__dev-title">HTML Academy</span>
-          <svg class="main-footer__dev-svg"></svg>
-        </a>
-      </div>
-    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>

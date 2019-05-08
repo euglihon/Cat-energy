@@ -1,0 +1,40 @@
+
+.form-main-block__title,
+.form-main-block__text {
+  font-family: $headline-font;
+  font-weight: 400;
+  color: #111;
+}
+
+.form-main-block__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.form-main-block__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main-block__title {
+    margin-top: 58px;
+    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-main-block__text {
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main-block__text {
+    margin-left: 0;
+  }
+}
