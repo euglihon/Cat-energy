@@ -1,6 +1,10 @@
 .page-footer {
   position: relative;
   background-color: #fff;
+
+  &--catalog {
+    background-color: #f2f2f2;
+  }
 }
 
 .contacts__block {
