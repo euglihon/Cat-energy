@@ -1,0 +1,177 @@
+.form__questionnaire {
+  margin-bottom: 27px;
+}
+
+.form__main {
+  margin-bottom: 22px;
+}
+
+
+.form__contact {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.form__textarea {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.form__add {
+  position: relative;
+}
+
+.form__block {
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+
+  &--icon {
+    position: relative;
+  }
+}
+
+.form__label,
+.form__input,
+.form__ratio-label {
+  font-family: $headline-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.form__label {
+  flex-shrink: 0;
+  margin-right: 15px;
+  max-width: 50%;
+}
+
+.form__input {
+  padding-left: 15px;
+  height: 43px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #212735;
+    box-shadow: inset 0 0 0 1px #212735;
+    outline: 0;
+  }
+
+  &--textarea {
+    padding-top: 13px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  fill: #222;
+  transform: translateY(-50%);
+}
+
+.form__input:focus~.form__icon {
+  fill: $main-color;
+}
+
+.form__list {
+  @include reset-list;
+
+  &--ratio {
+    padding-top: 27px;
+    padding-bottom: 4px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.form__item {
+  margin-bottom: 22px;
+}
+
+.form__ratio-input,
+.form__checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__ratio-input:checked~.form__ratio-label::before {
+  background-color: $main-color;
+  background-clip: content-box;
+}
+
+.form__ratio-label {
+  padding-left: 45px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    padding: 8px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+}
+
+.form__title {
+  margin-left: -20px;
+  padding-left: 20px;
+  display: block;
+  font-family: $headline-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111;
+  background-color: #fff;
+
+  &--contact {
+    margin-bottom: 32px;
+    width: 200px;
+  }
+
+  &--comment {
+    margin-bottom: 35px;
+    width: 140px;
+  }
+
+  &--add {
+    margin-bottom: 40px;
+    width: 160px;
+
+  }
+}
+
+
+
+
+
+

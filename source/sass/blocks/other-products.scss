@@ -3,17 +3,6 @@
   margin-bottom: 33px;
 }
 
-.line {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background-color: $main-color;
-  z-index: -1;
-}
-
 .other-products__main-title {
   margin: 0;
   padding: 0;
@@ -118,10 +107,6 @@
 @media (min-width: $tablet-width) {
   .other-products {
     margin-bottom: 78px;
-  }
-
-  .line {
-    top: 22px;
   }
 
   .other-products__main-title {

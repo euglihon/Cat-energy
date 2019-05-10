@@ -1,0 +1,16 @@
+.line {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: $main-color;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .line {
+    top: 22px;
+  }
+}
