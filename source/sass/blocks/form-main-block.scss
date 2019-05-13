@@ -1,6 +1,7 @@
 .form-main-block {
   margin-bottom: 35px;
 }
+
 .form-main-block__title,
 .form-main-block__text {
   font-family: $headline-font;
@@ -21,6 +22,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-main-block {
+    margin-bottom: 65px;
+  }
+
   .form-main-block__title {
     margin-top: 58px;
     margin-bottom: 55px;

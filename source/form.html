@@ -42,7 +42,7 @@
         </nav>
       </div>
     </header>
-
+<!--------MAIN----------->
     <main class="page-main">
 
       <section class="form-main-block container">
@@ -128,125 +128,108 @@
             <div class="line"></div>
               <div class="container">
                 <h2 class="form__title form__title--add">Дополнительно</h2>
-                  <ul class="form__list">
-                    <li class="form__item">
+                  <ul class="form__list form__list--checkbox">
+                    <li class="form__item form__item--checkbox">
                       <input class="form__checkbox-input" type="checkbox" id="sweetener" name="sweetener" checked>
-                      <label class="form__label" for="sweetener">Сахарозаменитель</label>
+                      <label class="form__checkbox-label" for="sweetener">Сахарозаменитель</label>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--checkbox">
                       <input class="form__checkbox-input" type="checkbox" id="water" name="water">
-                      <label class="form__label" for="water">Питьевая вода</label>
+                      <label class="form__checkbox-label" for="water">Питьевая вода</label>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--checkbox">
                       <input class="form__checkbox-input" type="checkbox" id="milk" name="milk">
-                      <label class="form__label" for="milk">Молоко</label>
+                      <label class="form__checkbox-label" for="milk">Молоко</label>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--checkbox">
                       <input class="form__checkbox-input" type="checkbox" id="vitamins" name="vitamins">
-                      <label class="form__label" for="vitamins">Витамины</label>
+                      <label class="form__checkbox-label" for="vitamins">Витамины</label>
                     </li>
                   </ul>
               </div>
           </div>
+<!--5-->
+          <div class="form__btn-block container">
+            <div class="form__btn-wrapper">
+              <button class="form__btn btn" type="submit">Отправить заявку</button>
+              <p class="form__text">* — Обязательные поля</p>
+            </div>
+          </div>
 
+        </form>
+      </section>
+    </main>
+<!--------FOOTER--------->
+    <footer class="page-footer page-footer--catalog">
 
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__block">
+            <b class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text--city">Санкт-Петербург</span></p>
+          </div>
+        </div>
 
+        <div class="contacts__map" id="map">
+          <picture> <!--NO .JS-->
+            <source media="(min-width: 1300px)" srcset="img/raster/bg-map-desktop@1x.png, img/raster/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/raster/bg-map-tablet@1x.png, img/raster/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-img" src="img/raster/bg-map-mobile@1x.png" srcset="img/raster/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+        </div>
 
+        <div class="contacts__footer-block">
 
+          <div class="container contacts__footer-wrapper">
 
+            <a class="contacts__icon">
+              <svg class="contacts__svg--icon" width="128px" height="24px">
+                <use xlink:href="img/vector/sprite/logo-footer.svg#logo-footer"></use>
+              </svg>
+            </a>
 
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__social" href="https://vk.com" target="_blank"><span class="visually-hidden">vk.com</span>
+                  <svg class="contacts__social--vk" width="22px" height="12px">
+                    <use xlink:href="img/vector/sprite/icon-vk.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__social" href="https://instagram.com" target="_blank"><span class="visually-hidden">instagram.com</span>
+                  <svg class="contacts__social--insta" width="16px" height="16px">
+                    <use xlink:href="img/vector/sprite/icon-insta.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__social" href="https://facebook.com" target="_blank"><span class="visually-hidden">facebook.com</span>
+                  <svg class="contacts__social--fb" width="10px" height="19px">
+                    <use xlink:href="img/vector/sprite/icon-fb.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
 
+            <a class="contacts__link" href="https://github.com/euglihon">
+              <span class="contacts__dev-title">HTML Academy</span>
+              <svg class="contacts__svg-dev" width="26.94px" height="34.09px" height="19px">
+                <use xlink:href="img/vector/sprite/logo-htmlacademy.svg#logo-htmlacademy"></use>
+              </svg>
+            </a>
 
+          </div>
 
+        </div>
 
 
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
+<!--------SCRIPTS--------->
     <script src="js/menu.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <main class="page-main">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div class="form__block-btn">
-            <button class="form__btn" type="submit">Отправить заявку</button>
-            <span class="form__btn-span">* — Обязательные поля</span>
-          </div>
-        </form>
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCubo6pvzkH1-z6BaeX_Dwz8SFaJXid5uM&callback=initialize" async defer></script>
 
   </body>
 </html>
