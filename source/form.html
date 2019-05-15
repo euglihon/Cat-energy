@@ -8,7 +8,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body>
 <!--------HEADER--------->
     <header class="pages-header">
@@ -44,36 +43,27 @@
     </header>
 <!--------MAIN----------->
     <main class="page-main">
-
       <section class="form-main-block container">
         <h1 class="form-main-block__title">Подбор программы</h1>
         <p class="form-main-block__text">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
       </section>
-
       <section class="form">
         <form action="https://echo.htmlacademy.ru" method="GET">
-<!--1-->
           <div class="form__questionnaire container">
-
             <div class="form__main">
-
               <div class="form__block">
                 <labe class="form__label" for="cat-name">Имя:*</labe>
                 <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
               </div>
-
               <div class="form__block">
                 <labe class="form__label" for="cat-weight">Вес (кг):*</labe>
                 <input class="form__input" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
               </div>
-
               <div class="form__block">
                 <labe class="form__label" for="cat-age">Возраст (лет):</labe>
                 <input class="form__input" type="text" id="cat-age" name="cat-age" placeholder="5">
               </div>
-
             </div>
-
             <ul class="form__list form__list--ratio">
               <li class="form__item">
                 <input class="form__ratio-input" type="radio" value="slim" id="slim" name="program" checked>
@@ -88,14 +78,11 @@
                 <label class="form__ratio-label" for="active">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
-
           </div>
-<!--2-->
           <div class="form__contact">
             <div class="line"></div>
               <div class="container">
                 <h2 class="form__title form__title--contact">Контактные данные (владельца кота)</h2>
-
                 <div class="form__wrapper">
                   <div class="form__block form__block--icon">
                     <label class="form__label" for="cat-email">E-mail:*</label>
@@ -104,7 +91,6 @@
                         <use xlink:href="img/vector/sprite/icon-mail.svg#icon-mail"></use>
                       </svg>
                   </div>
-
                   <div class="form__block form__block--icon">
                     <label class="form__label" for="cat-phone">Телефон:*</label>
                       <input class="form__input" type="text" id="cat-phone" name="cat-phone" placeholder="8 (960) 900-60-90" required>
@@ -115,7 +101,6 @@
                 </div>
               </div>
           </div>
-<!--3-->
           <div class="form__textarea">
             <div class="line"></div>
               <div class="container">
@@ -123,7 +108,6 @@
                 <textarea class="form__input form__input--textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
           </div>
-<!--4-->
           <div class="form__add">
             <div class="line"></div>
               <div class="container">
@@ -148,14 +132,12 @@
                   </ul>
               </div>
           </div>
-<!--5-->
           <div class="form__btn-block container">
             <div class="form__btn-wrapper">
               <button class="form__btn btn" type="submit">Отправить заявку</button>
               <p class="form__text">* — Обязательные поля</p>
             </div>
           </div>
-
         </form>
       </section>
     </main>
@@ -230,6 +212,5 @@
     <script src="js/menu.js"></script>
     <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCubo6pvzkH1-z6BaeX_Dwz8SFaJXid5uM&callback=initialize" async defer></script>
-
   </body>
 </html>
