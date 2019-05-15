@@ -14,6 +14,7 @@ var rename = require("gulp-rename");
 var run = require("run-sequence");
 var del = require("del");
 var server = require("browser-sync").create();
+var ghpages = require('gh-pages');
 
 gulp.task("clean", function () {
   return del("build");
@@ -99,3 +100,5 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]);
   gulp.watch("source/js/**/*.js", ["js"]);
 });
+
+ghpages.publish("build");
