@@ -47,12 +47,19 @@
           <h1 class="action__title">Функциональное питание для котов</h1>
           <p class="action__text">Занялся собой? Займись котом!</p>
           <picture>
+            <source media="(min-width: 1300px)" srcset="img/raster/index-can-desktop@1x.webp,
+              img/raster/index-can-desktop@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/raster/index-can-desktop@1x.png,
-            img/raster/index-can-desktop@2x.png 2x">
+              img/raster/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/index-can-tablet@1x.webp,
+              img/raster/index-can-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/raster/index-can-tablet@1x.jpg,
-            img/raster/index-can-tablet@2x.jpg 2x">
-            <img class="action__img"src="img/raster/index-can-mobile@1x.png" srcset="img/raster/index-can-mobile@2x.png 2x"
-            width="280px" height="270px" alt="Курица Cat Energy">
+              img/raster/index-can-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/raster/index-can-mobile@1x.webp,
+              img/raster/index-can-mobile@2x.webp 2x">
+            <img class="action__img"src="img/raster/index-can-mobile@1x.png"
+              srcset="img/raster/index-can-mobile@2x.png 2x"
+              width="280px" height="270px" alt="Курица Cat Energy">
           </picture>
           <a class="action__link btn" href="#">Подобрать программу</a>
         </div>
@@ -133,16 +140,22 @@
           <div class="slider__images">
             <div class="slider__image slider__image--before">
               <picture>
+                <source media="(min-width: 1300px)" srcset="img/raster/before-desktop@1x.webp, img/raster/before-desktop@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/raster/before-desktop@1x.png, img/raster/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/raster/before-tablet@1x.webp, img/raster/before-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/raster/before-tablet@1x.png, img/raster/before-tablet@2x.png 2x">
+                <source type="image/webp" srcset="img/raster/before-mobile@1x.webp, img/raster/before-mobile@1x.webp 2x">
                 <img width="320px" height="240px" src="img/raster/before-mobile@1x.png" srcset="img/raster/before-mobile@1x.png 2x" alt="Толстый Кот">
               </picture>
             </div>
 
             <div class="slider__image slider__image--after">
               <picture>
+                <source media="(min-width: 1300px)" srcset="img/raster/after-desktop@1x.webp, img/raster/after-desktop@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/raster/after-desktop@1x.png, img/raster/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/raster/after-tablet@1x.webp, img/raster/after-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/raster/after-tablet@1x.png, img/raster/after-tablet@2x.png 2x">
+                <source type="image/webp" srcset="img/raster/after-mobile@1x.webp, img/raster/after-mobile@1x.webp 2x">
                 <img width="320px" height="240px" src="img/raster/after-mobile@1x.png" srcset="img/raster/after-mobile@1x.png 2x" alt="Худой Кот">
               </picture>
             </div>
@@ -172,8 +185,11 @@
 
         <div class="contacts__map" id="map">
           <picture> <!--NO .JS-->
+            <source media="(min-width: 1300px)" srcset="img/raster/bg-map-desktop@1x.webp, img/raster/bg-map-desktop@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/raster/bg-map-desktop@1x.png, img/raster/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/raster/bg-map-tablet@1x.webp, img/raster/bg-map-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/raster/bg-map-tablet@1x.png, img/raster/bg-map-tablet@2x.png 2x">
+            <source type="image/webp" srcset="img/raster/bg-map-mobile@1x.webp, img/raster/bg-map-mobile@2x.webp 2x">
             <img class="contacts__map-img" src="img/raster/bg-map-mobile@1x.png" srcset="img/raster/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
         </div>
