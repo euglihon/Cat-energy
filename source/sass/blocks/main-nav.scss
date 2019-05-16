@@ -1,8 +1,16 @@
 .main-nav {
   display: none;
+
+  &--no-js {                //No-Js
+    display: block;
+  }
+
+  &--open {                //Js-open main menu list
+    display: block;
+  }
 }
 
-.main-nav--open {               //Js-open main menu list
+.main-nav--open {
   display: block;
 }
 
