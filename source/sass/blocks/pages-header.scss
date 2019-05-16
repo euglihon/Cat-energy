@@ -120,6 +120,7 @@
       (min-resolution: $retina-dppx) {
         .pages-header--index {
           background-image: linear-gradient(to right,#fff 50%,transparent 50%), url("../img/raster/index-background-desktop@2x.jpg");
+          background-size: contain;
         }
   }
 
