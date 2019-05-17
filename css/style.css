@@ -166,7 +166,8 @@ a {
 @media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
   .pages-header--index {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, transparent)), url("../img/raster/index-background-desktop@2x.jpg");
-    background-image: linear-gradient(to right, #fff 50%, transparent 50%), url("../img/raster/index-background-desktop@2x.jpg"); } }
+    background-image: linear-gradient(to right, #fff 50%, transparent 50%), url("../img/raster/index-background-desktop@2x.jpg");
+    background-size: contain; } }
 
 @media (min-width: 1300px) {
   .pages-header__logo-link {
@@ -177,6 +178,10 @@ a {
 
 .main-nav {
   display: none; }
+  .main-nav--no-js {
+    display: block; }
+  .main-nav--open {
+    display: block; }
 
 .main-nav--open {
   display: block; }
@@ -589,6 +594,15 @@ a {
   .features {
     padding-bottom: 80px;
     border-bottom: 1px solid #e6e6e6; }
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .features__title {
     margin-bottom: 73px;
     font-size: 60px;
@@ -622,19 +636,7 @@ a {
     margin-left: 0;
     margin-top: 33px;
     font-size: 16px;
-    line-height: 24px; }
-  .features__wrapper {
-    margin-right: 75px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .features__wrapper--one {
-      margin-bottom: 112px; }
-    .features__wrapper--two {
-      margin-bottom: 0px; } }
+    line-height: 24px; } }
 
 @media (min-width: 1300px) {
   .features {
@@ -647,8 +649,6 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .features__wrapper {
-    margin: 0; }
   .features__item--leaf {
     margin-right: 76px; }
   .features__item--clock {
