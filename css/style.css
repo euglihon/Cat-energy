@@ -836,6 +836,10 @@ a {
     .slider__images {
       width: 650px; } }
 
+.slider__cat-image {
+  width: 320px;
+  height: 240px; }
+
 .slider__image {
   position: absolute;
   top: 0;
